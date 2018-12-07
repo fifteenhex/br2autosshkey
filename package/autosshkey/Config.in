@@ -4,3 +4,7 @@ config BR2_PACKAGE_AUTOSSHKEY
 config BR2_PACKAGE_AUTOSSHKEY_USERS
 	depends on BR2_PACKAGE_AUTOSSHKEY
 	string "space separated list of users to generate keys for"
+
+config BR2_PACKAGE_AUTOSSHKEY_SUDOUSERS
+	depends on BR2_PACKAGE_AUTOSSHKEY
+	string "space separated list of users to allow password-less sudo"
